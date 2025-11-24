@@ -36,4 +36,4 @@ def test_power():
     """Test power function"""
     assert power(2, 2) == 4
     assert power(4, 9) == 262144
-    assert power(-2, 5) == -512
+    assert power(-2, 5) == -32
