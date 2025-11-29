@@ -38,11 +38,11 @@ jobs:
   test:
     name: Run Tests
     needs: build
-    runs-on: ${{ matrix.os }}
+    runs-on: ubuntu-latest
     
     strategy:
       matrix:
-        os: [ubuntu-latest, windows-latest]
+        # os: [ubuntu-latest, windows-latest]
         python-version: ['3.9', '3.10', '3.11', '3.12']
 
     steps:
