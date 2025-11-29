@@ -2,17 +2,17 @@ name: Reusable Test Workflow
 
 on:
   workflow_call:  # Special trigger for reusable workflows
-  inputs:
-    python-version:
-      description: 'Python version to use'
-      required: false
-      type: string
-      default: '3.11'
-    test-command:
-      description: 'Command to run tests'
-      required: false
-      type: string
-      default: 'pytest -v'
+    inputs:
+      python-version:
+        description: 'Python version to use'
+        required: false
+        type: string
+        default: '3.11'
+      test-command:
+        description: 'Command to run tests'
+        required: false
+        type: string
+        default: 'pytest -v'
     secrets:
       API_KEY:
         required: false
