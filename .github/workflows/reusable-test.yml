@@ -8,11 +8,11 @@ on:
       required: false
       type: string
       default: '3.11'
-      test-command:
-        description: 'Command to run tests'
-        required: false
-        type: string
-        default: 'pytest -v'
+    test-command:
+      description: 'Command to run tests'
+      required: false
+      type: string
+      default: 'pytest -v'
     secrets:
       API_KEY:
         required: false
@@ -64,3 +64,4 @@ jobs:
         with:
           name: coverage-report
           path: .coverage
+
